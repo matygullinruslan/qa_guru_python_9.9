@@ -3,6 +3,7 @@ from selene.support.conditions import be
 from selene.support.shared.jquery_style import s
 from selene import browser, by
 
+
 def test_github():
     with allure.step('Открываем главную страницу'):
         browser.open("/")
@@ -19,5 +20,3 @@ def test_github():
 
     with allure.step('Проверяем наличие Issues с номером 1'):
         s(by.partial_text('#1')).should(be.visible)
-        ...
-
