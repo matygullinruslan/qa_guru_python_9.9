@@ -11,7 +11,7 @@ def test_github():
     s(by.link_text("matygullinruslan/qa_guru_python_9.7")).click()
     s('#issues-tab').click()
     s(by.partial_text('#1')).should(be.visible)
-    ...
+
 
 
 
